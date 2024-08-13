@@ -26,9 +26,9 @@ class _TaskUiState extends State<TaskUi> {
       ),
      
 body: ListView.builder(
-  itemCount: 1,
+  itemCount: tasks.length,
   itemBuilder: (BuildContext context, int index) {
-    return ;
+    return Card(child: ListTile(title: Text(tasks[index]),),);
   },
 ),
 
