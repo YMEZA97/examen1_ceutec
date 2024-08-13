@@ -8,6 +8,15 @@ class TaskUi extends StatefulWidget {
   State<TaskUi> createState() => _TaskUiState();
 }
 
+
+final List<String> tasks = [
+  'Tarea de Matemáticas',
+  'Foro de Historia',
+  'Examen de Física',
+  'Tarea de Programación',
+  'Foro de Biología',
+];
+
 class _TaskUiState extends State<TaskUi> {
   @override
   Widget build(BuildContext context) {
