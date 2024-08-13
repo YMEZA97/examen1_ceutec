@@ -21,7 +21,7 @@ class homepage extends StatelessWidget {
                     context.goNamed("News");
                   },
                   label: const Text(
-                    'Noticias',
+                    'News',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                     ), 
