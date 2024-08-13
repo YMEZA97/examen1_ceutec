@@ -13,7 +13,7 @@ class _CurrencyUiState extends State<CurrencyUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Menú'),
+        title: const Text('Tasa de Cambio'),
       ),
       body: Center(
         child: TextButton(

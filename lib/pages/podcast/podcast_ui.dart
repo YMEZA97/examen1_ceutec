@@ -12,7 +12,7 @@ class _PodcastUiState extends State<PodcastUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Menú'),
+        title: const Text('Podcast'),
       ),
       body: Center(
         child: TextButton(

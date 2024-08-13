@@ -13,7 +13,7 @@ class _NewUiState extends State<NewUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Menú'),
+        title: const Text('Noticias'),
       ),
       body: Center(
         child: TextButton(
