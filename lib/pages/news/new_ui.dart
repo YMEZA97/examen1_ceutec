@@ -32,7 +32,7 @@ class _NewUiState extends State<NewUi> {
                     child: Cards(
                   cardName: 'Noticia 2',
                   cardImage:
-                      "https://marketplace.canva.com/EAFhmJtJ5bs/1/0/1131w/canva-portada-documento-peri%C3%B3dico-cl%C3%A1sico-noticias-estructurado-blanco-y-negro-mirJGaLiT4o.jpg",
+                      "https://img.freepik.com/vector-gratis/fondo-estudio-noticias-realista_23-2149985612.jpg",
                   cardNew:
                       "Nulla quis finibus odio, vel porttitor eros. Aliquam eu augue quis turpis semper porttitor...",
                 )),
@@ -40,7 +40,7 @@ class _NewUiState extends State<NewUi> {
                     child: Cards(
                   cardName: 'Noticia 3',
                   cardImage:
-                      "https://media.datacenterdynamics.com/media/images/Extra.width-880.jpg",
+                      "https://www.shutterstock.com/image-vector/stock-vector-illustration-logo-breaking-600nw-688668343.jpg",
                   cardNew:
                       "Integer mollis mi sed dolor maximus viverra. Suspendisse sit amet quam euismod, vulputate mauris sed, mattis nulla...",
                 )),
@@ -48,7 +48,15 @@ class _NewUiState extends State<NewUi> {
                     child: Cards(
                   cardName: 'Noticia 4',
                   cardImage:
-                      "https://serchile.cl/site/img/material_particulado.jpg",
+                      "https://img.freepik.com/vector-premium/noticias-ultima-hora-azul-sobre-fondo-azul-oscuro-ilustracion-vectorial-concepto-noticias_194782-1404.jpg",
+                  cardNew:
+                      "Integer mollis mi sed dolor maximus viverra. Suspendisse sit amet quam euismod, vulputate mauris sed, mattis nulla...",
+                )),
+                 Card(
+                    child: Cards(
+                  cardName: 'Noticia 5',
+                  cardImage:
+                      "https://i.pinimg.com/736x/0a/3f/3f/0a3f3fe4b482a8853bf63364d9a3bc6a.jpg",
                   cardNew:
                       "Integer mollis mi sed dolor maximus viverra. Suspendisse sit amet quam euismod, vulputate mauris sed, mattis nulla...",
                 )),
