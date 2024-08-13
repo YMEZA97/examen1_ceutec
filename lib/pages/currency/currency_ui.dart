@@ -11,10 +11,10 @@ class _CurrencyUiState extends State<CurrencyUi> {
   final TextEditingController controlador = TextEditingController();
   String selectmoneda = 'USD';
   double resultado = 0.0;
-  final double lempirasaDolar = 0.041;
-  final double dolaraLempiras = 24.3;
-  final double lempirasaEuro = 0.034;
-  final double euroaLempiras = 29.5;
+
+  final double dolaraLempiras = 24.72;
+  
+  final double euroaLempiras = 27;
 
   void convertidor() {
     double input = double.tryParse(controlador.text) ?? 0.0;
@@ -23,37 +23,35 @@ class _CurrencyUiState extends State<CurrencyUi> {
         resultado = input * dolaraLempiras;
       } else if (selectmoneda == 'EUR') {
         resultado = input * euroaLempiras;
-      } else if (selectmoneda == 'HNL A USD') {
-        resultado = input * lempirasaDolar;
-      } else if (selectmoneda == 'HNL A EUR') {
-        resultado = input * lempirasaEuro;
-      }
+      } 
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Tasa de Cambio'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+ 
           children: [
-            TextField(
-              controller: controlador,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Ingrese la cantidad en Lempiras',
+
+ Padding(
+              padding: const EdgeInsets.all(16).copyWith(bottom: 30),
+              child:const Text(
+                "Seleccione la Moneda",
+                style: const TextStyle(fontSize: 34),
               ),
             ),
-            const SizedBox(height: 20),
-            DropdownButton<String>(
+
+
+ DropdownButton<String>(
               value: selectmoneda,
-              items: <String>['USD', 'EUR', 'HNL to USD', 'HNL to EUR']
+              items: <String>['USD', 'EUR']
                   .map((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
@@ -66,16 +64,39 @@ class _CurrencyUiState extends State<CurrencyUi> {
                 });
               },
             ),
-            const SizedBox(height: 20),
+
+  const SizedBox(height: 30),
+
+            TextField(
+              controller: controlador,
+              keyboardType: TextInputType.number,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Ingrese la cantidad que desea convertir',
+              ),
+            ),
+
+
+          
+           
+            const SizedBox(height: 30),
             ElevatedButton(
               onPressed: convertidor,
-              child: const Text('Convertir'),
+              child: const Text('Convertir a L'),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 50),
+          const Text(
+              "Resultado:",
+              style: const TextStyle(fontSize: 30),
+            ),
+
+   const SizedBox(height: 50),
             Text(
-              'Resultado: $resultado',
-              style: const TextStyle(fontSize: 24),
+              "L.$resultado",
+              style: const TextStyle(fontSize: 40),
             ),
+
+
           ],
         ),
       ),
