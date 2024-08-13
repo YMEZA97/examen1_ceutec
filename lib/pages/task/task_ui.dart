@@ -25,14 +25,24 @@ class _TaskUiState extends State<TaskUi> {
         title: const Text('Lista de Tareas'),
       ),
      
-body: ListView.builder(
-  itemCount: tasks.length,
-  itemBuilder: (BuildContext context, int index) {
-    return Card(child: ListTile(title: Text(tasks[index]),),);
-  },
-),
-
-
+ body: ListView.builder(
+          itemCount: tasks.length,
+          itemBuilder: (context, index) {
+            return Card(
+              child: ListTile(
+                leading: const Icon(Icons.assignment),
+                title: Text(tasks[index]),
+                trailing: IconButton(
+                  icon: const Icon(Icons.check_circle_outline),
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('${tasks[index]} completada!')),
+                    );
+                  },
+                ),
+              ),
+            );
+          }),
     );
   }
 }
