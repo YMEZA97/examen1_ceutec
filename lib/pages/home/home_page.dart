@@ -16,26 +16,51 @@ class homepage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconButton(
+                TextButton.icon(
                   icon: const Icon(Icons.newspaper, size: 100),
                   onPressed: () {},
+                  label: const Text(
+                    'Noticias',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                  ),
                 ),
-                IconButton(
+                TextButton.icon(
                   icon: const Icon(Icons.currency_exchange, size: 100),
                   onPressed: () {},
-                ),
+                     label: const Text(
+                    'Noticias',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    
+                    ),
+                  ),
+                )
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.add_task, size: 100),
+                TextButton.icon(
+                  icon: const Icon(Icons.add_task, size: 100,),
                   onPressed: () {},
+                     label: const Text(
+                    'Noticias',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                  ),
                 ),
-                IconButton(
+                TextButton.icon(
                   icon: const Icon(Icons.podcasts, size: 100),
                   onPressed: () {},
+                     label: const Text(
+                    'Noticias',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                  ),
                 ),
               ],
             ),
