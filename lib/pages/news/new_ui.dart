@@ -1,4 +1,5 @@
 
+import 'package:examen1/pages/news/widget/cards.dart';
 import 'package:flutter/material.dart';
 
 class NewUi extends StatefulWidget {
@@ -15,13 +16,17 @@ class _NewUiState extends State<NewUi> {
       appBar: AppBar(
         title: const Text('Noticias'),
       ),
-      body: Center(
-        child: TextButton(
-          onPressed: () {},
-          child: const Text(
-            "News",
+      body: const Center(
+
+        child:  Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Card(child: Cards(cardName: 'Elevated Card')),
+              Card(child: Cards(cardName: 'Filled Card')),
+              Card(child: Cards(cardName: 'Outlined Card')),
+            ],
           ),
-        ),
+       
       ),
     );
   }

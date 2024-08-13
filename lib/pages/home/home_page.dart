@@ -24,7 +24,7 @@ class homepage extends StatelessWidget {
                     'Noticias',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
-                    ),
+                    ), 
                   ),
                 ),
               ],
