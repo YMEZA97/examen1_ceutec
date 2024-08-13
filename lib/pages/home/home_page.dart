@@ -12,10 +12,10 @@ class homepage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+             
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.newspaper, size: 80),
@@ -27,6 +27,11 @@ class homepage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ],
+            ),
+            Row(
+              
+              children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.currency_exchange, size: 80),
                   onPressed: () {},
@@ -36,11 +41,11 @@ class homepage extends StatelessWidget {
                       color: Color.fromARGB(255, 0, 0, 0),
                     ),
                   ),
-                )
+                ),
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(
@@ -55,6 +60,11 @@ class homepage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ],
+            ),
+            Row(
+            
+              children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.podcasts, size: 80),
                   onPressed: () {},
