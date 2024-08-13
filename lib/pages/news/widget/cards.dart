@@ -12,55 +12,58 @@ class Cards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Stack(
+    return Column(            
           children: [
-            Ink.image(
-              image: NetworkImage(
-                cardImage,
-              ),
-              height: 240,
-              fit: BoxFit.cover,
+            Stack(
+              children: [
+                Ink.image(
+                  image: NetworkImage(
+                    cardImage,
+                  ),
+                  height: 150,
+                  fit: BoxFit.cover,
+                ),
+                Positioned(
+                  bottom: 16,
+                  right: 16,
+                  left: 16,
+                  child: Text(
+                    cardName,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 28,
+                    ),
+                  ),
+                ),
+              ],
             ),
-            Positioned(
-              bottom: 16,
-              right: 16,
-              left: 16,
+            Padding(
+              padding: const EdgeInsets.all(16).copyWith(bottom: 10),
               child: Text(
-                cardName,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
+                cardNew,
+                style: const TextStyle(fontSize: 12),
               ),
             ),
-          ],
-        ),
-        Padding(
-          padding: const EdgeInsets.all(16).copyWith(bottom: 0),
-          child: Text(
-            cardNew,
-            style: const TextStyle(fontSize: 16),
-          ),
-        ),
-        ButtonBar(
-          alignment: MainAxisAlignment.start,
-          children: [
-            TextButton.icon(
-              icon: const Icon(Icons.visibility),
-              onPressed: () {},
-              label: const Text(
-                'Ver Noticia',
-                style: TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
+            ButtonBar(
+              alignment: MainAxisAlignment.start,
+              children: [
+                TextButton.icon(
+                  icon: const Icon(Icons.visibility),
+                  onPressed: () {},
+                  label: const Text(
+                    'Ver Noticia',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                    ),
+                  ),
                 ),
-              ),
-            ),
+              ],
+            )
+    
+    
+            
           ],
-        )
-      ],
-    );
+        );
   }
 }
