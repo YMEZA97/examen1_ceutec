@@ -1,4 +1,5 @@
-import 'package:examen1/pages/home/home_page.dart';
+
+import 'package:examen1/pages/widgets/index.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());
@@ -9,7 +10,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const homepage(),
+      home: const CurrencyUi(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
     );
