@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:examen1/pages/widgets/index.dart';
+import 'package:go_router/go_router.dart';
+
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
@@ -19,11 +20,14 @@ class homepage extends StatelessWidget {
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.newspaper, size: 80),
-                  onPressed: () {},
+                  onPressed: () {
+context.goNamed("News");
+                  },
                   label: const Text(
                     'Noticias',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
+                     
                     ),
                   ),
                 ),
