@@ -21,9 +21,9 @@ class _NewUiState extends State<NewUi> {
         child:  Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Card(child: Cards(cardName: 'Elevated Card')),
-              Card(child: Cards(cardName: 'Filled Card')),
-              Card(child: Cards(cardName: 'Outlined Card')),
+              Card(child: Cards(cardName: 'Noticia 1')),
+              Card(child: Cards(cardName: 'Noticia 2')),
+              Card(child: Cards(cardName: 'Noticia 3')),
             ],
           ),
        
