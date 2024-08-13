@@ -1,6 +1,5 @@
 
-import 'package:examen1/pages/home/home_page.dart';
-
+import 'package:examen1/pages/router/router.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());
@@ -10,11 +9,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: const homepage(),
+    return  MaterialApp.router(
+     
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      
+      routerConfig: router,
     );
   }
 }

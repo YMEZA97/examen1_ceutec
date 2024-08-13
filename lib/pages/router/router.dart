@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 
-final GoRouter routers = GoRouter(
-  debugLogDiagnostics: true,
-  routes: <RouteBase>[
+final GoRouter router = GoRouter(
+
+  routes: <GoRoute>[
      GoRoute(
         path: '/', // landing or initial page declare 
         builder: (BuildContext context, GoRouterState state) {
@@ -45,7 +45,3 @@ final GoRouter routers = GoRouter(
   ],
 );
 
- return MaterialApp.router(
-      routerDelegate: routers.routerDelegate,
-      routeInformationParser: routers.routeInformationParser,
-    );

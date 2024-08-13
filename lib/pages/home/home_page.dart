@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
 class homepage extends StatelessWidget {
   const homepage({super.key});
 
@@ -13,34 +12,33 @@ class homepage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Row(
-             
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.newspaper, size: 80),
                   onPressed: () {
-context.goNamed("News");
+                    context.goNamed("News");
                   },
                   label: const Text(
                     'Noticias',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
-                     
                     ),
                   ),
                 ),
               ],
             ),
             Row(
-              
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.currency_exchange, size: 80),
-                  onPressed: () {},
+                  onPressed: () {
+                    context.goNamed("Currency");
+                  },
                   label: const Text(
-                    'Noticias',
+                    'Currency',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                     ),
@@ -49,16 +47,17 @@ context.goNamed("News");
               ],
             ),
             Row(
-              
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(
                     Icons.add_task,
                     size: 80,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    context.goNamed("Task");
+                  },
                   label: const Text(
-                    'Noticias',
+                    'Task',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                     ),
@@ -67,11 +66,12 @@ context.goNamed("News");
               ],
             ),
             Row(
-            
               children: <Widget>[
                 TextButton.icon(
                   icon: const Icon(Icons.podcasts, size: 80),
-                  onPressed: () {},
+                  onPressed: () {
+                    context.goNamed("Podcast");
+                  },
                   label: const Text(
                     'Podcast',
                     style: TextStyle(
