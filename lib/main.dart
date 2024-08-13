@@ -1,6 +1,5 @@
 
 import 'package:examen1/pages/home/home_page.dart';
-import 'package:examen1/pages/widgets/index.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());

@@ -18,7 +18,7 @@ class homepage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 TextButton.icon(
-                  icon: const Icon(Icons.newspaper, size: 100),
+                  icon: const Icon(Icons.newspaper, size: 80),
                   onPressed: () {},
                   label: const Text(
                     'Noticias',
@@ -28,13 +28,12 @@ class homepage extends StatelessWidget {
                   ),
                 ),
                 TextButton.icon(
-                  icon: const Icon(Icons.currency_exchange, size: 100),
+                  icon: const Icon(Icons.currency_exchange, size: 80),
                   onPressed: () {},
-                     label: const Text(
+                  label: const Text(
                     'Noticias',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
-                    
                     ),
                   ),
                 )
@@ -44,9 +43,12 @@ class homepage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 TextButton.icon(
-                  icon: const Icon(Icons.add_task, size: 100,),
+                  icon: const Icon(
+                    Icons.add_task,
+                    size: 80,
+                  ),
                   onPressed: () {},
-                     label: const Text(
+                  label: const Text(
                     'Noticias',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
@@ -54,10 +56,10 @@ class homepage extends StatelessWidget {
                   ),
                 ),
                 TextButton.icon(
-                  icon: const Icon(Icons.podcasts, size: 100),
+                  icon: const Icon(Icons.podcasts, size: 80),
                   onPressed: () {},
-                     label: const Text(
-                    'Noticias',
+                  label: const Text(
+                    'Podcast',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                     ),
