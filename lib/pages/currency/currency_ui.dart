@@ -44,7 +44,7 @@ class _CurrencyUiState extends State<CurrencyUi> {
               padding: const EdgeInsets.all(16).copyWith(bottom: 30),
               child:const Text(
                 "Seleccione la Moneda",
-                style: const TextStyle(fontSize: 34),
+                style: TextStyle(fontSize: 34),
               ),
             ),
 
@@ -87,7 +87,7 @@ class _CurrencyUiState extends State<CurrencyUi> {
             const SizedBox(height: 50),
           const Text(
               "Resultado:",
-              style: const TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 30),
             ),
 
    const SizedBox(height: 50),
